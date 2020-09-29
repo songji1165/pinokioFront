@@ -1,10 +1,15 @@
 import React from 'react';
+import Header from "../components/Home/Header";
+import Footer from "../components/Home/Footer";
+import HomeSection from "../components/Home/HomeSection";
 
 function Home() {
     return (
-        <div className="Home">
-            <h3>Home</h3>
-        </div>
+            <div className="Home">
+                <Header/>
+                <HomeSection/>
+                <Footer/>
+            </div>
     );
 }
 

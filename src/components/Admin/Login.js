@@ -8,7 +8,7 @@ const S = {
     Login: styled.div`
         padding: 2rem 0;
         
-        & > div {
+        & < div {
             text-align: center;
         }
     `,
