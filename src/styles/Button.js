@@ -15,7 +15,7 @@ const COLOR = {
 
 const Button = styled.button`
   margin: 5px 2px;
-  padding: 3px 5px;
+  padding: 5px;
   border-radius: 2px;
   border : ${(props) => (props.color ? `1px solid ${props.color}` : "1px solid rgb(161 160 161)")};
   vertical-align:middle;
@@ -25,6 +25,7 @@ const Button = styled.button`
   cursor: ${(props) => (props.pointer ?" pointer" : "normal")};
   font-size: ${(props) =>
     props.size ? FONTSIZE[props.size] : FONTSIZE.normal};
+  width: ${(props) => (props.width ? `${props.width}px` : "auto")};
 `;
 
 export default Button;

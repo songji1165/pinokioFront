@@ -1,6 +1,6 @@
 import React from 'react';
 // import axios from 'axios';
-import Login from "../components/Admin/Login";
+import Login from "./Login";
 import styled from "styled-components";
 
 const S = {
@@ -10,17 +10,23 @@ const S = {
   `
 };
 
-function Admin() {
+class Admin extends React.Component {
+    componentDidMount() {
+        if(!sessionStorage.getItem("userId")){
+            this.props.history.push("/login");
+        }
+    }
 
-    return (
-        <>
-        <S.Admin className="Admin">
-            <h3>관리자입니다.</h3>
-            <Login/>
-        </S.Admin>
-        </>
+    render() {
+        return (
+            <>
+                <S.Admin className="Admin">
+                    <h3>관리자입니다.</h3>
+                </S.Admin>
+            </>
 
-    );
+        );
+    }
 }
 
 export default Admin;

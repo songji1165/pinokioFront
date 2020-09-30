@@ -3,6 +3,8 @@ import { HashRouter, Route } from "react-router-dom";
 import GlobalStyle from "./styles/GlobalStyle"
 import Home from "./routes/Home";
 import Admin from "./routes/Admin";
+import Login from "./routes/Login";
+
 
 
 function App() {
@@ -26,11 +28,12 @@ function App() {
   // );
   return (
       <>
+          <GlobalStyle/>
       <HashRouter>
         <Route path="/" component={Home} exact={true} />
         <Route path="/admin" component={Admin}/>
+        <Route path="/login" component={Login}/>
       </HashRouter>
-      <GlobalStyle/>
       </>
   );
 }

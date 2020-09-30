@@ -9,9 +9,11 @@ import styled from 'styled-components'
 // };
 
 const Input = styled.input`
-  width: 80%;
-  height:30px;
-  padding: 3px 5px;
+  width: 70%;
+  max-width:400px;
+  height: 40px;
+  padding: 5px 10px;
+  margin: .5rem;
   border-radius: 2px;
   border : ${(props) => (props.color ? `1px solid ${props.color}` : "1px solid rgb(161 160 161)")};
   vertical-align:middle;
