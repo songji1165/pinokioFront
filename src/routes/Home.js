@@ -4,6 +4,7 @@ import Footer from "../components/Home/Footer";
 import HomeSection from "../components/Home/HomeSection";
 
 function Home() {
+
     return (
             <div className="Home">
                 <Header/>

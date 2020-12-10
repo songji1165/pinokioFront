@@ -7,12 +7,10 @@ const Foot = styled.footer`
   height: 10vh;
   text-align: center;
   padding: 1rem;
-  background-color: pink;
 `
 
 function Footer() {
     return (
-
         <div className="Footer">
             <Foot>
                 상담센터 : 1899 - 1460 (9:00~ 16:00 상담가능)<br/>
